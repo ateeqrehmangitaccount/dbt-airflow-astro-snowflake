@@ -1,0 +1,23 @@
+sources:  
+  - name: ecom_project_sources
+    database: ecom_staging_db
+    schema: ecom_staging_schema
+    tables:
+      - name: products
+        columns:
+          - name: id,productname
+      - name: productvariant
+        columns:
+          - name: id,productname_id,productpurchase_price,productselling_price,productdiscount,productprice
+      - name: ordermaster
+        columns:
+          - name: id,ordernummber,ordershipping,ordertotal        
+      - name: orderdetail
+        columns:
+          - name: id,orderquantity,orderproductweight,productname_id,orderproductvariant_id
+      
+     
+
+
+
+      

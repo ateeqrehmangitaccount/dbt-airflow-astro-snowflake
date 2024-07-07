@@ -1,0 +1,44 @@
+[0m13:45:42.847734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a1e197c580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a1dfebceb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a1dfebce50>]}
+
+
+============================== 13:45:42.852955 | a5f5142a-d50b-46e0-967f-1deeedc6d7e4 ==============================
+[0m13:45:42.852955 [info ] [MainThread]: Running with dbt=1.8.3
+[0m13:45:42.854570 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/marehman/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:45:47.617543 [debug] [MainThread]: Starter project path: /home/marehman/ecom/ecomvenv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m13:45:47.640823 [info ] [MainThread]: 
+Your new dbt project "ecomproject" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:45:47.645766 [info ] [MainThread]: Setting up your profile.
+[0m13:46:57.830781 [info ] [MainThread]: Profile ecomproject written to /home/marehman/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:46:57.836080 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 75.05685, "process_user_time": 1.927191, "process_kernel_time": 0.167929, "process_mem_max_rss": "110244", "process_in_blocks": "248", "process_out_blocks": "88"}
+[0m13:46:57.841180 [debug] [MainThread]: Command `dbt init` succeeded at 13:46:57.840581 after 75.06 seconds
+[0m13:46:57.843968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a1e197c580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a1dfebd240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a1dfebfcd0>]}
+[0m13:46:57.846680 [debug] [MainThread]: Flushing usage events
+[0m13:49:21.022530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7522bbc905b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7522ba1d1090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7522ba1d1030>]}
+
+
+============================== 13:49:21.026013 | 7368aa7b-2a6a-4e72-8534-28aaa683a6b4 ==============================
+[0m13:49:21.026013 [info ] [MainThread]: Running with dbt=1.8.3
+[0m13:49:21.027825 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/marehman/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:49:21.029533 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/marehman/ecom/dags/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:49:21.031779 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.07197747, "process_user_time": 1.614301, "process_kernel_time": 0.135521, "process_mem_max_rss": "89344", "process_in_blocks": "16", "process_out_blocks": "16", "command_success": false}
+[0m13:49:21.033820 [debug] [MainThread]: Command `dbt run` failed at 13:49:21.033469 after 0.07 seconds
+[0m13:49:21.035217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7522bbc905b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7522ba1d1120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7522ba1d1060>]}
+[0m13:49:21.036740 [debug] [MainThread]: Flushing usage events
